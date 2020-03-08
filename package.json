@@ -1,0 +1,66 @@
+{
+  "name": "@brainerd/text-input",
+  "version": "1.0.0",
+  "description": "Reusabled Text Input Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll=false",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint --config stylelint.json **/*.scss",
+    "verify": "yarn lint:js && yarn lint:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-brainerd/text-input%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BDbrainerd-text-input.git"
+  },
+  "author": "Andrew Brainerd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-brainerd/text-input%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BDbrainerd-text-input/issues"
+  },
+  "homepage": "https://github.com/andrew-brainerd/text-input%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BDbrainerd-text-input#readme",
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "stylelint": "^12.0.1",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/__mocks__/cssModuleMock.js"
+    },
+    "setupFiles": [
+      "<rootDir>/enzymeSetup.js"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!coverage/**"
+    ]
+  },
+  "dependencies": {
+    "lodash.noop": "^3.0.1"
+  }
+}
